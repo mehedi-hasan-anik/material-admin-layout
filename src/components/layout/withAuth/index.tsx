@@ -1,7 +1,7 @@
 import Footer from "@/components/Shared/Footer";
 import Skeletons from "@/components/common/Skeletons";
 import { Box, Grid, Paper } from "@mui/material";
-import React, { Suspense, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import dashboardStyle from "../DashboardStyle";
 const Sidebar = React.lazy(() => import("@/components/Shared/Sidebar"));
 const Header = React.lazy(() => import("@/components/Shared/Header/Header"));
@@ -14,6 +14,13 @@ const WithAuth = ({ children }: PropType) => {
   const classes = dashboardStyle();
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const [viewSidebar, setViewSidebar] = useState<boolean>(true);
+  const [test, setTest] = useState(false);
+
+  useEffect(() => {
+    setTest((prevState: any) => !prevState);
+  }, [children]);
+
+  console.log("test", mobileOpen, viewSidebar);
 
   return (
     <Grid container>

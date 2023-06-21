@@ -115,7 +115,7 @@ const dashboardStyle = makeStyles((theme) => ({
 
   content: {
     flexGrow: 1,
-    padding: theme.spacing(2),
+    // padding: theme.spacing(2),
     [theme.breakpoints.up("lg")]: {
       // width: `calc(100% - ${drawerWidth}px)`,
       // marginLeft: drawerWidth,
@@ -125,7 +125,7 @@ const dashboardStyle = makeStyles((theme) => ({
     width: "100%",
     overflowY: "hidden",
     margin: "0",
-    // padding: "0",
+    padding: "0",
   },
 
   drawer: {
