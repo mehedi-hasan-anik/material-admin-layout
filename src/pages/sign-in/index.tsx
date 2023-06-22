@@ -27,7 +27,7 @@ function SignIn() {
           <Box className="formWrapper">
             <Box className="logoWrapper">
               <Image
-                src="/assets/googleLogo.svg"
+                src="/assets/logo.svg"
                 width={100}
                 height={50}
                 alt="logo"
@@ -35,7 +35,7 @@ function SignIn() {
             </Box>
             <Box className="headerWrapper">
               <h3>Sign in</h3>
-              <p>Use Your Google Account</p>
+              <p>Use Your Pax Account</p>
             </Box>
             <TextField
               className="textField"
@@ -59,15 +59,11 @@ function SignIn() {
           </Box>
           <Box className="FormFooter">
             <FormControl variant="standard" sx={{ m: 1, minWidth: 220 }}>
-              {/* <InputLabel id="demo-simple-select-label">
-                English (United States)
-              </InputLabel> */}
               <Select
                 id="demo-simple-select"
                 disableUnderline
                 value={age}
                 onChange={handleChange}
-                // defaultValue={10}
               >
                 <MenuItem value={10}>English (United States)</MenuItem>
                 <MenuItem value={20}>Twenty</MenuItem>

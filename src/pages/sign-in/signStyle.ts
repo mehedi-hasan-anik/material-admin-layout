@@ -13,7 +13,7 @@ export const signInStyle: SxProps = {
     width: "100%",
   },
   ".formWrapper": {
-    border: "1px solid grey",
+    border: "1px solid #c7c3c3",
     borderRadius: "5px",
     padding: "20px 30px",
   },
