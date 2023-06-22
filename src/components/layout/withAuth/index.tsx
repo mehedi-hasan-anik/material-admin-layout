@@ -20,8 +20,6 @@ const WithAuth = ({ children }: PropType) => {
     setTest((prevState: any) => !prevState);
   }, [children]);
 
-  console.log("test", mobileOpen, viewSidebar);
-
   return (
     <Grid container>
       <Suspense fallback={<Skeletons />}>

@@ -706,6 +706,7 @@ export const MenuList: MenuListType[] = [
                 src="/assets/icons/sidebaricon/poridorshon.png"
                 alt=""
                 width={20}
+                height={20}
               />
             ),
             path: "/admin/inspection-management/head-office/tour-planning/approved",
@@ -722,6 +723,8 @@ export const MenuList: MenuListType[] = [
                 src="/assets/icons/sidebaricon/poridorshon.png"
                 alt=""
                 className="menuSingleItemIcon"
+                width={20}
+                height={20}
               />
             ),
             path: "/admin/inspection-management/head-office/learning-center-inspection",
@@ -735,6 +738,8 @@ export const MenuList: MenuListType[] = [
                 src="/assets/icons/sidebaricon/poridorshon.png"
                 alt=""
                 className="menuSingleItemIcon"
+                width={20}
+                height={20}
               />
             ),
             path: "/admin/inspection-management/head-office/resource-center-inspection",
@@ -796,6 +801,8 @@ export const MenuList: MenuListType[] = [
                 src="/assets/icons/sidebaricon/poridorshon.png"
                 alt=""
                 className="menuSingleItemIcon"
+                width={20}
+                height={20}
               />
             ),
             path: "/admin/inspection-management/divisional-office/learning-center-inspection",
@@ -809,6 +816,8 @@ export const MenuList: MenuListType[] = [
                 src="/assets/icons/sidebaricon/poridorshon.png"
                 alt=""
                 className="menuSingleItemIcon"
+                width={20}
+                height={20}
               />
             ),
             path: "/admin/inspection-management/divisional-office/resource-center-inspection",
