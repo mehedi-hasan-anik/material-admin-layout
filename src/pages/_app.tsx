@@ -5,8 +5,14 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
-  const toggle = true;
+  const [toggle, setToggle] = useState(true);
   const router = useRouter();
+
+  useEffect(() => {
+    if (!router?.pathname?.includes("admin")) {
+      setToggle(false);
+    }
+  }, [router]);
 
   const [showMore, setShowMore] = useState(false);
 
