@@ -9,11 +9,13 @@ export const signInStyle: SxProps = {
     fontFamily: "'Roboto', sans-serif",
   },
   ".innerBoxWrapper": {
+    maxWidth: "450px",
+    width: "100%",
+  },
+  ".formWrapper": {
     border: "1px solid grey",
     borderRadius: "5px",
     padding: "20px 30px",
-    maxWidth: "450px",
-    width: "100%",
   },
   ".logoWrapper": {
     textAlign: "center",
@@ -54,5 +56,22 @@ export const signInStyle: SxProps = {
     "& a": {
       color: "#0076e4",
     },
+  },
+  ".FormFooter": {
+    marginTop: "20px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  ".FormFooterRightSide": {
+    display: "flex",
+    alignItems: "center",
+    fontSize: "14px",
+  },
+  ".helpLink": {
+    marginRight: "20px",
+  },
+  ".privacyLink": {
+    marginRight: "20px",
   },
 };
