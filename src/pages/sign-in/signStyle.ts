@@ -25,6 +25,7 @@ export const signInStyle: SxProps = {
     "& h3": {
       fontSize: "30px",
       marginBottom: "10px",
+      color: "#2e2e2e",
     },
     "& p": {
       fontSize: "16px",
