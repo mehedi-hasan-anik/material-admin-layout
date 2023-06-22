@@ -14,11 +14,30 @@ const WithAuth = ({ children }: PropType) => {
   const classes = dashboardStyle();
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const [viewSidebar, setViewSidebar] = useState<boolean>(true);
-  const [test, setTest] = useState(false);
+  const [screenSize, setScreenSize] = useState(getCurrentDimension());
+
+  function getCurrentDimension() {
+    return {
+      width: window.innerWidth,
+      height: window.innerHeight,
+    };
+  }
+  useEffect(() => {
+    const updateDimension = () => {
+      setScreenSize(getCurrentDimension());
+    };
+    window.addEventListener("resize", updateDimension);
+
+    return () => {
+      window.removeEventListener("resize", updateDimension);
+    };
+  }, [screenSize]);
 
   useEffect(() => {
-    setTest((prevState: any) => !prevState);
-  }, [children]);
+    if (screenSize?.width <= 1200) {
+      setViewSidebar(false);
+    }
+  }, [screenSize]);
 
   return (
     <Grid container>
@@ -46,8 +65,15 @@ const WithAuth = ({ children }: PropType) => {
           width:
             viewSidebar && !mobileOpen
               ? "calc(100% - 260px)"
+              : screenSize?.width <= 1200
+              ? "100%"
               : "calc(100% - 50px)",
-          marginLeft: viewSidebar && !mobileOpen ? "260px" : "50px",
+          marginLeft:
+            viewSidebar && !mobileOpen
+              ? "260px"
+              : screenSize?.width <= 1200
+              ? "0px"
+              : "50px",
           transition: ".5s",
         }}
       >
