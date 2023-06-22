@@ -62,11 +62,13 @@ export const signInStyle: SxProps = {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
+    flexWrap: "wrap",
   },
   ".FormFooterRightSide": {
     display: "flex",
     alignItems: "center",
     fontSize: "14px",
+    flexWrap: "wrap",
   },
   ".helpLink": {
     marginRight: "20px",
